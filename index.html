@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KikaoFinds | Airbnb Booking Platform</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
 
+  <header>
+    <div class="logo">KikaoFinds</div>
+  </header>
+
+  <section class="hero-text">
+    <p>Are you looking for a home far away from home? Search no more! KikaoFinds is the best place to book your next stay.</p>
+    <p>We have a variety of selections to suit your needs. Our houses come with all the amenities you need for a comfortable stay.</p>
+    <p>Feel free to check out what we have to offer!</p>
+  </section>
+
+  <section class="gallery">
+    <div class="main-img"></div>
+    <div class="side-imgs">
+      <div class="side-img img2"></div>
+      <div class="side-img img3"></div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="details">
+      <h1>2BR Cottage in Kiambu - Near Tatu City</h1>
+      <p class="location">📍 10 mins from Ruiru, Backup Power & Fast WiFi</p>
+      
+      <div class="amenities">
+        <span> 4 Guests</span>
+        <span> 2 Bedrooms</span>
+        <span> WiFi</span>
+        <span> Parking</span>
+        <span> Kitchen</span>
+        <span> Pool</span>
+      </div>
+
+      <h2>About this place</h2>
+      <p>Escape the city in this quiet, secure cottage perfect for remote work and weekend getaways. Fully equipped kitchen, hot shower, and private garden. Your host Marone is a Superhost with 127 reviews.</p>
+
+      <h2>House Rules</h2>
+      <ul>
+        <li>Check-in: 2 PM - Check-out: 11 AM</li>
+        <li>No smoking, No parties</li>
+        <li>Max 4 guests</li>
+      </ul>
+
+      <h2>Location</h2>
+      <p>Kiambu, near Tatu City - Exact location shared after booking.</p>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.026!2d36.95!3d-1.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f!2sKiambu%2C%20Kenya!5e0!3m2!1sen!2ske"
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius:12px;" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p style="margin-top:8px; font-size:13px;">
+          <a href="https://www.google.com/maps/search/?api=1&query=Kiambu,+Kenya" target="_blank">Open in Google Maps →</a>
+        </p>
+      </div>
+
+      <h2>Contact Host</h2>
+      <p>Have questions? Reach out directly. No online payment required.</p>
+      
+      <a href="mailto:godiwio0@gmail.com?subject=Booking%20Inquiry%20-%20Kiambu%20Cottage&body=Hi%20Marone,%0A%0AI'm%20interested%20in%20booking%20the%202BR%20cottage%20in%20Kiambu.%0A%0AMy%20dates%20are:%20%0A%0AThanks!" class="email-btn">
+        📧 Email: godiwio0@gmail.com
+      </a>
+
+      <a href="https://wa.me/254101051030?text=Hi%20Marone,%20I'm%20interested%20in%20the%20Kiambu%20cottage%20on%20KikaoFinds" target="_blank" class="email-btn" style="background:#25D366;">
+        💬 WhatsApp: 0101051030
+      </a>
+
+    </div>
+
+    <div class="booking-card" id="booking">
+      <div class="price"><strong>KES 5,000</strong> / night</div>
+      
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin">
+      
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout">
+      
+      <label for="guests">Guests</label>
+      <select id="guests">
+        <option>1 guest</option>
+        <option>2 guests</option>
+        <option>3 guests</option>
+        <option>4 guests</option>
+      </select>
+
+      <button onclick="calculateBooking()">Check Availability</button>
+      <div id="result"></div>
+
+      <p style="margin-top:15px; font-size:12px; color:#666; text-align:center;">
+        You won't be charged yet. Host will contact you via email/WhatsApp.
+      </p>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
